@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashraya Chalise - Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/script.css" />
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="hero">
+        <video id="video-background" autoplay loop muted playsinline>
+            <source src="Video/Video.mp4" type="video/mp4">
+        </video>
+
+        <nav class="navbar">
+            <a href="#hero" class="logo">Prashraya Chalise</a>
+
+            <!-- Hamburger Button -->
+            <button id="menu-button" class="menu-toggle" aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Hi — I'm <span class="accent">Prashraya Chalise</span></h1>
+            <p class="lead">Student • Developer • Tech Enthusiast</p>
+            <a href="#projects" class="cta">View My Projects</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        My name is Prashraya Chalise, and I am 21 years old. I am currently studying at Herald College, Kathmandu, where I am focused on developing my knowledge and skills. I enjoy learning new things, exploring technology, and participating in activities that help me grow personally and professionally. I value honesty, hard work, and continuous improvement. In my free time, I love reading, listening to music, and spending time with friends. I am curious by nature and always eager to understand more about the world around me.
+                    </p>
+                </div>
+
+                <div class="about-meta">
+                    <ul>
+                        <li><strong>Name:</strong> Prashraya Chalise</li>
+                        <li><strong>City:</strong> Kathmandu</li>
+                        <li><strong>Country:</strong> Nepal</li>
+                        <li><strong>Email:</strong> your-email@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-row">
+                <div class="skill"><div class="skill-icon">💻</div>HTML5</div>
+                <div class="skill"><div class="skill-icon">🎨</div>CSS3</div>
+                <div class="skill"><div class="skill-icon">⚙</div>JavaScript</div>
+                <div class="skill"><div class="skill-icon">📱</div>Responsive Design</div>
+                <div class="skill"><div class="skill-icon">🌐</div>UI / UX</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="project1.jpg" alt="">
+                    </div>
+                    <div class="project-body">
+                        <h3>3D Environment</h3>
+                        <p>Created a 3D model of Gokuldham Society using Unity, allowing users to explore buildings, roads, and gardens.</p>
+                        <div class="project-tags">
+                            <span>Unity</span>
+                            <span>3D</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="project2.jpg" alt="">
+                    </div>
+                    <div class="project-body">
+                        <h3>Weather App</h3>
+                        <p>A dynamic weather application built using HTML, CSS, JavaScript, and PHP.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container narrow">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-row">
+                    <label>Name *</label>
+                    <input type="text" id="name" />
+                    <div id="error-name" class="error"></div>
+                </div>
+
+                <div class="form-row">
+                    <label>Email *</label>
+                    <input type="email" id="email" />
+                    <div id="error-email" class="error"></div>
+                </div>
+
+                <div class="form-row">
+                    <label>Message</label>
+                    <textarea id="message" rows="6"></textarea>
+                </div>
+
+                <div id="form-message" class="form-message"></div>
+
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Prashraya Chalise — Kathmandu, Nepal.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
